@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Arrancadões</title>
+<script src="../js/site.js"></script>
+</head>
+<body>
+	<header>
+		<div class="col-1">
+			<a  href="../index.html"><img src="../imgs/lista.jpg" alt="Central"></a><img>
+		</div>
+		<div class="col-2">
+			<h1 ahref="index.html">Central dos Arrancadões</h1>
+			<nav>
+				<a href="../index.html" class="opcao">Inicio</a>
+				<a href="sejamembro.html" class="opcao">Seja Membro</a>
+				<a href="saibamais.html" class="opcao">Saiba Mais</a>
+			</nav>
+		</div>
+		
+	</header>
+	<section>
+		<form name="frmsejamembro" method="post" action="membro.html" onsubmit="return validasejaMembro()">
+			<fieldset class="sejaMembro">
+				<legend>Dados cadastrais:</legend>
+				<label for="nome"">Nome:</label>
+				<input type="text" name="txtnome" id="nome"  placeholder="Nome Completo">
+				<label for="fone">WhatsApp:</label>
+				<input type="fone" name="txtfone" id="fone" placeholder="(xx)11111-1111">
+				<label for="email">E-mail:</label>
+				<input type="email" name="txtemail" id="email" placeholder="seuemail@email.com">
+				<label for="date">Data de Nascimento:</label>
+				<input type="date" name="txtdate" id="date" required="required">
+				<label for="nome">Sexo</label>
+				<div class="row">
+					<label name="sexo">Masculino</label>
+					<input type="radio" name="sexo" id="masc" value=1>	
+				</div>
+				<div class="row ml-2">
+					<label name="sexo">Feminino</label>
+					<input type="radio" name="sexo" id="fem" value=2>
+				</div>
+				<div class="col flex">
+					<label name="membro">Deseja ser membro?</label>
+					<input type="checkbox" name="validamembro" class="membro">
+				</div>
+				<button type="reset">Limpar</button><button type="submit">Ser membro</button>				
+			</fieldset>
+		</form>
+	</section>
+</body>
+<footer class="membro">Copyright &copy; Direito autorais das imagens - A lista Área 47</footer>
+<link rel="stylesheet" type="text/css" href="../css/site.css">
+</html>
